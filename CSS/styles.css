@@ -1,0 +1,89 @@
+body {
+  background-image: url("../Images/pay.jpg");
+  text-align: center;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  color: aliceblue;
+}
+
+h1 {
+  font-family: "Harmattan", sans-serif;
+  font-size: 5rem;
+  color: #810034;
+  background-color: aliceblue;
+  width: 70%;
+  margin: auto auto;
+  padding: 0;
+}
+
+.table-div {
+  width: 70%;
+  margin: auto auto;
+  background-color: #810034;
+}
+
+td {
+  width: 31.25rem;
+  padding: 1.2rem 0;
+}
+
+.input-guessed-number {
+  background-color: aliceblue;
+  border-width: 0;
+  margin: 1.4rem auto 1rem;
+  max-width: 15rem;
+  max-height: 20rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 10rem;
+  border-radius: 8px;
+}
+
+.btn {
+  background-color: #c0dfec;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: bolder;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 8px;
+  border-width: 0;
+}
+
+.btn:hover {
+  color: aliceblue;
+}
+
+.btn:active {
+  color: aliceblue;
+}
+
+.to-do {
+  background-color: grey;
+  width: 70%;
+  margin: 1rem auto;
+}
+
+.last-buttons {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.reset {
+  background-color: red;
+  color: antiquewhite;
+}
+
+.play-again {
+  background-color: green;
+  color: antiquewhite;
+}
+
+.my-num {
+  margin: 0;
+  color: #f7ff56;
+  font-size: 3rem;
+  font-weight: bolder;
+}
