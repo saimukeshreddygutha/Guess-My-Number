@@ -1,5 +1,6 @@
 body {
   background-image: url("../Images/pay.jpg");
+  background-size: cover;
   text-align: center;
 }
 
