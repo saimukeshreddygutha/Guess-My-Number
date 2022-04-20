@@ -17,11 +17,19 @@ const setMaxScore = function () {
   document.querySelector(".max-score").textContent = maxScore;
 };
 
+const showMyNum = function (num) {
+  document.querySelector(".my-num").textContent = num;
+};
+
+const changeColor = function (c) {
+  document.querySelector(".my-num").style.color = c;
+};
+
 const playAgain = function () {
   score = 10;
   myNum = Math.trunc(Math.random() * 100 + 1);
-  document.querySelector(".my-num").style.color = "#f7ff56";
-  document.querySelector(".my-num").textContent = "?";
+  changeColor("#f7ff56");
+  showMyNum("?");
   setMessage("Start guessing the number 😀");
   setTempScore();
   return;
@@ -34,8 +42,8 @@ document.querySelector(".check").addEventListener("click", function () {
     if (!guessed) {
       setMessage("Input a valid number");
     } else if (guessed === myNum) {
-      document.querySelector(".my-num").style.color = "gold";
-      document.querySelector(".my-num").textContent = myNum;
+      changeColor("gold");
+      showMyNum(myNum);
       setMessage("Correct Answer!");
       maxScore = Math.max(maxScore, score);
       setMaxScore();
@@ -47,6 +55,8 @@ document.querySelector(".check").addEventListener("click", function () {
       score--;
     }
   } else {
+    showMyNum(myNum);
+    changeColor("red");
     setMessage("Sorry you lost the game!");
     score = 0;
   }
